@@ -83,8 +83,6 @@
 			var secondColorIndex = Math.ceil(partialIndex);
 			var midColorPercent = partialIndex - firstColorIndex;
 
-			// If indexes are the same, just return that color
-			if (firstColorIndex == secondColorIndex) return colors[firstColorIndex];
 			if (firstColorIndex < 0 || firstColorIndex > (colors.length - 1) || secondColorIndex < 0 || secondColorIndex > (colors.length - 1))
 				throw "Amalgamatr: percent is out of bounds of the color list (" + percent + ")";
 
