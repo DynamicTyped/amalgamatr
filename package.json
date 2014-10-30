@@ -1,0 +1,23 @@
+{
+  "name": "amalgamatr",
+  "version": "0.0.1",
+  "description": "Takes in a list of colors and selects one that fits within the specified percentage",
+  "main": "amalgamatr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DynamicTyped/amalgamatr.git"
+  },
+  "keywords": [
+    "color",
+    "gradient"
+  ],
+  "author": "Joseph Coutcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DynamicTyped/amalgamatr/issues"
+  },
+  "homepage": "https://github.com/DynamicTyped/amalgamatr"
+}
