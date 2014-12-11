@@ -1,3 +1,4 @@
+var $ = require('jQuery');
 // Amalgamatr - Takes a list of colors, and blends them together based on a percent
 (function ($) {
 	var priv = {
