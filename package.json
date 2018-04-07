@@ -1,6 +1,6 @@
 {
   "name": "amalgamatr",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Takes in a list of colors and selects one that fits within the specified percentage",
   "main": "amalgamatr.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DynamicTyped/amalgamatr.git"
+    "url": "git+https://github.com/DynamicTyped/amalgamatr.git"
   },
   "keywords": [
     "color",
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/DynamicTyped/amalgamatr/issues"
   },
-  "homepage": "https://github.com/DynamicTyped/amalgamatr"
+  "homepage": "https://github.com/DynamicTyped/amalgamatr",
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {
+    "tslint-microsoft-contrib": "^5.0.3"
+  }
 }
