@@ -2,9 +2,12 @@
   "name": "amalgamatr",
   "version": "1.0.0",
   "description": "Takes in a list of colors and selects one that fits within the specified percentage",
-  "main": "amalgamatr.js",
+  "main": "dist/amalgamatr.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "pretest": "tsc --target es5 --outDir ./.tmp test/index.ts",
+    "test": "jasmine ./.tmp/test/index.js",
+    "start": "npm run build && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -12,6 +15,7 @@
   },
   "keywords": [
     "color",
+    "css",
     "gradient"
   ],
   "author": "Joseph Coutcher",
@@ -20,10 +24,13 @@
     "url": "https://github.com/DynamicTyped/amalgamatr/issues"
   },
   "homepage": "https://github.com/DynamicTyped/amalgamatr",
-  "directories": {
-    "example": "example"
-  },
+  "directories": {},
   "devDependencies": {
-    "tslint-microsoft-contrib": "^5.0.3"
+    "tslint-microsoft-contrib": "^5.0.3",
+    "tslint": "^5.9.1",
+    "@types/jasmine": "^2.8.6",
+    "@types/node": "^9.4.6",
+    "jasmine": "^3.1.0",
+    "typescript": "^2.7.2"
   }
 }
